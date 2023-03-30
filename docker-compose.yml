@@ -9,7 +9,7 @@ services:
             - ASPNETCORE_ENVIRONMENT=docker
             - ASPNETCORE_URLS=http://+:80
             - ASPNETCORE_HTTPS_PORT=80
-            - ConnectionStrings__DefaultConnection="Host=postgres;Port=5432;Database=productDb;Username=postgres;Password=admin;Include Error Detail=true"
+            - ConnectionStrings__DefaultConnection="Server=postgres;Port=5432;Database=identityDb;User Id=postgres;Password=admin"
         ports:
           - 80:80
         depends_on:
